@@ -17,4 +17,4 @@ packages available in [pcpm](https://github.com/ShadowCHuyna/pcpm):
 - [mongoose](https://github.com/ShadowCHuyna/pcpm-packages/tree/main/mongoose)
 - [pll](https://github.com/ShadowCHuyna/pcpm-packages/tree/main/pll)
 - [jim-module](https://github.com/ShadowCHuyna/pcpm-packages/tree/main/jim-module)
-- [raylib-modu](https://github.com/ShadowCHuyna/pcpm-packages/tree/main/raylib-modu)
+- [raylib-module](https://github.com/ShadowCHuyna/pcpm-packages/tree/main/raylib-modu)
