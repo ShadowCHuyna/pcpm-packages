@@ -1,0 +1,11 @@
+prefix=/media/sch/1d4ff7f6-aff3-4363-9afa-cd30c422e094/projects/potatom/potato_c_package_manager/packages/ffi
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+toolexeclibdir=${libdir}/../lib
+includedir=${prefix}/include
+
+Name: libffi
+Description: Library supporting Foreign Function Interfaces
+Version: 3.5.2
+Libs: -L${toolexeclibdir} -lffi
+Cflags: -I${includedir}

@@ -1,0 +1,6 @@
+{
+    "name": "jim-module",
+    "dependencies": {
+        "pll": {}
+    }
+}

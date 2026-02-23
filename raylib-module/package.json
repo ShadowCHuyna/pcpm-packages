@@ -1,0 +1,6 @@
+{
+    "name": "raylib-module",
+    "dependencies": {
+        "pll": {}
+    }
+}
