@@ -37,8 +37,8 @@ def build(root: Path, pkg: Path, args: dict) -> BuildArgs|None:
 
     ba: BuildArgs = {
         "source": [
-            f"-I{str(pkg/"include")}",
-            f"-L{str(pkg/"lib")}",
+            f"-I{str(pkg/'include')}",
+            f"-L{str(pkg/'lib')}",
         ],
         "link": [
             f"-l:{lib_name}"

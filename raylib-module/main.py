@@ -3,8 +3,8 @@ import os
 import shutil
 from types import ModuleType
 
-from .utils.utils import build_sf_libs, get_module, get_pkg_args, get_platform, add_includes_in_c_cpp_properties, create_lib_symlink, get_lib, check_lib, get_platform, change_loger_format, load_config, remove_includes_in_c_cpp_properties
-from .utils.ds import PKGS_PATH, TMP_SRC_PATH, BuildArgs, Config, BIN_PATH
+from pcpm.utils import build_sf_libs, get_module, get_pkg_args, get_platform, add_includes_in_c_cpp_properties, create_lib_symlink, get_lib, check_lib, get_platform, change_loger_format, load_config, remove_includes_in_c_cpp_properties
+from pcpm.ds import PKGS_PATH, TMP_SRC_PATH, BuildArgs, Config, BIN_PATH
 
 import logging
 
@@ -73,7 +73,7 @@ def build(src: Path, pkg: Path, args: dict) -> BuildArgs|None:
 
     ba: BuildArgs = {
         "source": [
-            f"-I{pkg/"include"}"
+            f"-I{pkg/'include'}"
         ],
         "link": [
             "-lm"

@@ -3,8 +3,8 @@ import shutil
 import os
 from types import ModuleType
 
-from .utils.utils import add_includes_in_c_cpp_properties, change_loger_format, build_sf_libs, remove_includes_in_c_cpp_properties, get_lib, load_config, get_module, get_pkg_args
-from .utils.ds import BuildArgs, Config, BIN_PATH, TMP_SRC_PATH, PKGS_PATH
+from pcpm.utils import add_includes_in_c_cpp_properties, change_loger_format, build_sf_libs, remove_includes_in_c_cpp_properties, get_lib, load_config, get_module, get_pkg_args
+from pcpm.ds import BuildArgs, Config, BIN_PATH, TMP_SRC_PATH, PKGS_PATH
 
 import logging
 
@@ -71,7 +71,7 @@ def build(root: Path, pkg: Path, args: dict) -> BuildArgs|None:
     
     ba: BuildArgs = {
         "source": [
-            f"-I{pkg/"include"}",
+            f"-I{pkg/'include'}",
         ],
         "link": [],
         "objs": objs

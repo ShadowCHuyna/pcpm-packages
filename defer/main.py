@@ -16,7 +16,7 @@ def init(root: Path, pkg: Path) -> dict|None:
 def build(root: Path, pkg: Path, args: dict) -> BuildArgs|None:
     ba: BuildArgs = {
         "source": [
-            f"-I{str(pkg/"include")}",
+            f"-I{str(pkg/'include')}",
         ],
         "link": [],
         "objs": []

@@ -57,7 +57,7 @@ def build(root: Path, pkg: Path, args: dict) -> BuildArgs|None:
 
     ba: BuildArgs = {
         "source": [
-            f"-I{pkg/"include"}",
+            f"-I{pkg/'include'}",
         ],
         "link": ["-lm"],
         "objs": objs

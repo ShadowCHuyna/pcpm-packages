@@ -63,7 +63,7 @@ def compile(pkg: Path) -> str|None:
     jim_source: list[str]|None = get_jim_source()
     if jim_source is None: return
 
-    cmd = [cc, "-c", str(pkg/"pjim.c"), "-o", str(pkg/"pjim.o"), f"-I{pkg/"include"}"] + jim_source
+    cmd = [cc, "-c", str(pkg/"pjim.c"), "-o", str(pkg/"pjim.o"), f"-I{pkg/'include'}"] + jim_source
     try:
         subprocess.run(cmd, text=True)
     except:
@@ -78,7 +78,7 @@ def build(root: Path, pkg: Path, args: dict) -> BuildArgs|None:
     if obj is None: return None
 
     ba: BuildArgs = {
-        "source": [f"-I{pkg/"include"}"],
+        "source": [f"-I{pkg/'include'}"],
         "link": [],
         "objs": [obj]
     }

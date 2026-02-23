@@ -66,7 +66,7 @@ def build(src: Path, pkg: Path, args: dict) -> BuildArgs|None:
 
     ba: BuildArgs = {
         "source": [
-            f"-I{pkg/"include"}",
+            f"-I{pkg/'include'}",
             f"-L{path_to_lib}"
         ],
         "link": [

@@ -19,8 +19,8 @@ def init(root: Path, pkg: Path) -> dict|None:
 def build(root: Path, pkg: Path, args: dict) -> BuildArgs|None:
     ba: BuildArgs = {
         "source": [
-            f"-I{str(pkg/"include")}",
-            f"-L{str(pkg/"lib")}",
+            f"-I{str(pkg/'include')}",
+            f"-L{str(pkg/'lib')}",
         ],
         "link": [
             f"-l:libdill.a"
