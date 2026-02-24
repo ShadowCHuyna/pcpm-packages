@@ -3,8 +3,9 @@ import os
 import shutil
 from types import ModuleType
 
-from pcpm.utils import build_sf_libs, get_module, get_pkg_args, get_platform, add_includes_in_c_cpp_properties, create_lib_symlink, get_lib, check_lib, get_platform, change_loger_format, load_config, remove_includes_in_c_cpp_properties
+from pcpm.utils import get_module, get_pkg_args, get_platform, add_includes_in_c_cpp_properties, create_lib_symlink, get_lib, check_lib, get_platform, change_loger_format, load_config, remove_includes_in_c_cpp_properties
 from pcpm.ds import PKGS_PATH, TMP_SRC_PATH, BuildArgs, Config, BIN_PATH
+from .utils import build_sf_libs
 
 import logging
 
